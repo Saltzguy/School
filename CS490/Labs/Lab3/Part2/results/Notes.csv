@@ -1,0 +1,8 @@
+Run : OPT	rate	steps	graph
+1st : AdamOPT : .01 : 20000: 100
+2nd : RMPSOPT : .01 : 20000: 100 : the steps happened faster
+3rd :Gradent  : .01: 20000: 100  : steps are faster
+4th :AdamOPT  : .01: 50000: 100
+5th RMPSOPT  : .01 : 50000: 100
+6th Gradent : .01  : 500000: 100
+7th AdamOPT : .01   : 50000 : 100 skip window = 4

@@ -1,0 +1,12 @@
+RMSP: File 1532451783: learning rate 0.001: training iters 10000: n inputs 3: n hidden 512
+RMSP: File 1532452312: learning rate 0.0001: training iters 10000: n inputs 3: n hidden 512
+Adam: File 1532452533: learning rate 0.0001: training iters 10000: n inputs 3: n hidden 512
+Adam: File 1532452712: learning rate 0.001: training iters 10000: n inputs 3: n hidden 512
+Adam: File 1532452975: learning rate 0.001: training iters 10000: n inputs 5: n hidden 512
+Adam: File 1532453213: learning rate 0.001: training iters 10000: n inputs 10: n hidden 512
+Adam: File 1532453568: learning rate 0.001: training iters 10000: n inputs 5: n hidden 1024
+Adam: File 1532454267: learning rate 0.001: training iters 10000: n inputs 5: n hidden 512
+Adam: File 1532454729: learning rate 0.001: training iters 10000: n inputs 5: n hidden 512
+
+Adam seems to do better than RMSP. Increasing the n_input to 5 help the accuracy a lot. n_input to 10 was about the same as 5. Increasing the number of hidden layers to 1024 did not seem to help the accuracy but, slowed down the program a lot.
+Adding the 2nd layer seem to help a bit. I think my main problem was my data set. Need a better one.

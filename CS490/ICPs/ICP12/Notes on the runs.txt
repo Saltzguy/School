@@ -1,0 +1,11 @@
+1531850597 no change
+1531850598 4,5,6 filter
+1531850586 dropout .25
+1531851153 num filters 256 // worst
+1531851395 l2_reg_lambda .1
+1531851653 RMSP .001 lr
+1531851898 AdagradOptimizer(.001) // tied for worst
+1531852068 AdagradOPtimizer(.01)
+1531857314 AdagradOptimizer(.1) // best of the AdagradOptimizer .85 on train data
+1531857601 AdagradOptimizer(.5)
+1531857941 RMSP(.1)

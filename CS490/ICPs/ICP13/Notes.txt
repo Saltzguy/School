@@ -1,0 +1,44 @@
+data "Digits"
+
+0 : no changes 0.9496 on test
+1 : no changes 0.9431 on test
+2 : Adam lr = .001 0.976 on test 
+3 : Adam lr = .01 0.1028 on test
+4 : Adam lr = .005 .1135 on test
+5 : GDO lr = .0001 0.4552 on test
+6 : GDO lr = .001 0.8126 on test
+7 : GDO lr = .01 0.9428 on test
+8 : GDO lr = .02 0.9582 on test
+
+data2 'Fashion"
+0 : no changes.9449
+1 : Adam lr=.001 .9733 - had .42 accuracy at step 0
+2 : No change from 1 .9756 
+3 : Adam lr=.01 .1028
+4 : GDO  lr =.01 .9464
+5 : GDO  lr =.03 .9675
+6 : Adagrad lr =.01 .9607
+7 : Adagrad lr = .9695
+
+fashion 'Fashion'
+0 : no changes 0.9481 on test
+1 : filter changes 16,36,128 .8971 on test
+2 : Adam lr=.001 .9702 on test
+3 : Adam lr=.01 .9527 on test
+4 : GDO lr =.01 .903 on test
+5 : GDO lr=.05 .9525 on test
+6 : Adagrad lr =.01 .9421 on test
+7 : Adagrad lr=.001 .7334 on test
+8 : Adagrad lr=.05 .9691 on test
+
+
+digits 'Digits':
+0 : filter changes 16,36,128 .9037
+1 : Adam lr=.001    .9659
+2 : Adam lr=.01     .9604
+3 : GDO  lr =.01    .9066
+4 : GDO lr =.1      .9598
+5 : GDO lr=.2       .9729
+6 : Adagrad lr =.01 .9441
+7 : Adagrad lr =.05 .9692
+8 : Adagrad lr=.03  .9669

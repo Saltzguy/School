@@ -1,0 +1,45 @@
+Chaged the vocab size to 5000 and the learing rate .01
+Average loss at step  1000 :  104.533644926548
+Average loss at step  2000 :  41.91683197940886
+Average loss at step  3000 :  29.800047343552112
+Average loss at step  4000 :  24.70394387024641
+Average loss at step  5000 :  21.52071558663249
+
+Changed the vocab size to 5000 and the learing rate to .2
+Average loss at step  1000 :  462.27558714294435
+Average loss at step  2000 :  726.9900684051545
+Average loss at step  3000 :  825.9799186972293
+Average loss at step  4000 :  925.8260208244324
+Average loss at step  5000 :  1070.4853699264527
+
+The rate does the best at .01
+
+Changed the vocab size to 5000, the learing rate to .01 and step 10000
+Average loss at step  1000 :  105.64972823858261
+Average loss at step  2000 :  41.808180928230286
+Average loss at step  3000 :  29.912541241645812
+Average loss at step  4000 :  24.720939814448357
+Average loss at step  5000 :  23.35122804492712
+Average loss at step  6000 :  22.665923166930675
+Average loss at step  7000 :  18.38752332431078
+Average loss at step  8000 :  20.86174707853794
+Average loss at step  9000 :  18.88855645352602
+Average loss at step  10000 :  14.223808709353209
+
+Changed the vocab size to 5000, the learing rate to .01 and step 2000
+Average loss at step  1000 :  104.68822591733932
+Average loss at step  2000 :  41.39866100358963
+
+Vocab size 5000 lering rate .01 valid size 8
+Average loss at step  1000 :  106.69200666284561
+Average loss at step  2000 :  41.6039767203927
+Average loss at step  3000 :  28.89256712153554
+Average loss at step  4000 :  25.42549021536112
+Average loss at step  5000 :  21.155387359380722
+
+Vocab size 5000 lering rate .01 valid size 24
+Average loss at step  1000 :  105.39150860738754
+Average loss at step  2000 :  41.5274581413269
+Average loss at step  3000 :  28.61591060115397
+Average loss at step  4000 :  24.344763696193695
+Average loss at step  5000 :  22.712907663941383 
