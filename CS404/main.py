@@ -4,7 +4,6 @@ from datetime import datetime
 from Graph import Graph
 
 def generate_vehicle(locations: set, num: int) -> list:
-    random.seed(datetime.now())
     return random.sample(locations, num)
    
 
@@ -13,7 +12,6 @@ def generate_request(locations: set):
        index = 0
        while True:
             index += 1
-            random.seed(datetime.now())
             rand_vehicle = random.randint(0,2)
             rand_locations = random.sample(locations,1)
             yield index, rand_vehicle, rand_locations[0]
@@ -36,14 +34,17 @@ def find_closest_vehicle(vehicles: list, destination: int, graph: Graph):
         
 
 
-
-
 # set of the available zip codes
+
 locations = {64151, 64152, 64153, 64154, 64155, 64156, 64157, 64158, 64159, 64160,64161, 64162, 64163}
+
+random.seed(datetime.now())
 graph = Graph()
 graph.add_nodes(locations)
 # generate a random undirected connnected graph max weight 5, extra edges 5
 graph.generate_random_undirected_graph(5, 5)
+
+
 print(graph)
 
 # generates request
@@ -83,7 +84,7 @@ for _ in range(10):
         if vehicle_index is not None:
             start_loc = police[vehicle_index]
             police[vehicle_index] = request_loc
-
+ 
     else:
         vehicle_type = "Ambulance"
         vehicle_index, dist, path = find_closest_vehicle(ambulance,request_loc,graph)
